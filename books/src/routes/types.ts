@@ -1,3 +1,5 @@
+//used https://app.quicktype.io/ to create the following
+
 export interface APIResponse {
 	kind: string;
 	totalItems: number;
