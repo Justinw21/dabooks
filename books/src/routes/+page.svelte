@@ -50,7 +50,8 @@
 		<div class = "header-container">
 			<h1>Book Search</h1>
 			<h2> <a href = "/profile"> Profile </a> </h2>
-			<h2> <a href = "/recommendation"> Recommendations </a></h2> 
+			<h2> <a href = "/recommendation"> Recommendations </a> </h2> 
+			<h2> <a href = "/about"> About Us </a> </h2>
 		</div>
 	</div>
 	<div class="right">
