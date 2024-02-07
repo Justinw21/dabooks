@@ -1,6 +1,11 @@
 # Book Search
 
+## Overview
 
+This site allows you to search up a variety of books through the use of Google Books APIs. 
+This website was built using the framework, Svektekit. This flexible framework allows us to 
+integrate Firebase services and Vite, letting us use Google OAuth (Open Authentication).
+                
 ## Creators
 
 Contributers and their Information:
