@@ -3,6 +3,7 @@
 	import type { APIResponse, Item } from '../../types';
 	import '../../styles/mainpage.css';
 	import { destroy_component } from 'svelte/internal';
+	import { addDoc, collection } from 'firebase/firestore';
 
 	let search = '';
 	let bookData: Item[] = [];
@@ -43,6 +44,8 @@
 			})
 			.catch((err) => console.log(err));
 	}
+
+	
 </script>
 
 <div id="app">
@@ -63,9 +66,9 @@
 				on:input={inputChange}
 				on:keypress={searchBook}
 			/>
-			<button on:click={searchBookButton}
-				><i class="fa-solid fa-magnifying-glass" style="color: #ffffff;" /></button
-			>
+			<button on:click={searchBookButton}>
+				<i class="fa-solid fa-magnifying-glass" style="color: #ffffff;" />
+			</button>
 		</div>
 
 		<div class="book-container">

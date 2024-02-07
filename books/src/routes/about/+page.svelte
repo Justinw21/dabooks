@@ -5,17 +5,20 @@
             Hello! welcome to the Book Search about page.
             <div class = "text">
                 This site allows you to search up a variety of books 
-                through the use of Google Books APIs. We also have a 
-                authentication system from Vites APIs integreted with 
-                Google OAuth (Open Authentication). 
+                through the use of Google Books APIs. This website was built 
+                using the framework, Svektekit. This flexible framework allows us to integrate Firebase services and Vite, letting us use 
+                Google OAuth (Open Authentication).<br><br>
+                This website was made by Anita Justin and Thomas!
             </div>
             <div class = "apis">
-                <h2>API</h2>
+                <h2>Technologies</h2>
+                Google Firebase<br>
+                Google Firestore<br>
+                HTML CSS Javascript<br>
+                Sveltekit<br>
+                Vite<br>
             </div>
-
-            <div class = "contacts">
-                <h2>Creators</h2>
-            </div>
+            <div class = ""></div>
         </div>
     </div>
 </div>
@@ -25,7 +28,8 @@
         
         font-family: 'Indie Flower', cursive;
         color: rgb(117, 72, 20);
-        font-size:24px;
+        font-size:28px;
+        margin-top:20px;
 
         display:flex;
         justify-content: center;
@@ -37,14 +41,14 @@
     }
     h1{
         font-family: 'Indie Flower', cursive;
-		font-size: xxx-large;
-		color: rgb(117, 72, 20);
+        font-size: xxx-large;
+        color: rgb(117, 72, 20);
         background-color: rgb(219, 204, 186);
         font-weight:bolder;
         border-radius: 20px;
-		margin: 10px;
-		border-style: dashed;
-		border-width: 5px;
+        margin: 10px;
+        border-style: dashed;
+        border-width: 5px;
 
         display:flex;
         justify-content: center;
