@@ -8,7 +8,30 @@
 	.header-container {
 	    display: flex;
     	flex-direction: column;
-    	align-items: center;	
+    	align-items: center;
+	}
+
+	.header-links
+	{
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		text-align: center;
+
+		font-family: 'Indie Flower', cursive;
+		background-color: rgb(219, 204, 186);
+		color: rgb(117, 72, 20);
+		border-radius: 20px;
+		
+		border-style: dashed;
+		border-width: 5px;
+		padding: 10px;
+		font-size: x-large;
+		
+		position: absolute;
+		top: 50%;
+		-ms-transform: translateY(-50%);
+		transform: translateY(-50%);
 	}
 
 	h1 {
@@ -20,6 +43,7 @@
 		margin: 10px;
 		border-style: dashed;
 		border-width: 5px;
+		padding: 10px;
 	}
 
 	h2 {
@@ -31,8 +55,8 @@
 		margin: 10px;
 		border-style: dashed;
 		border-width: 5px;
+		padding: 10px;
 	}
-
 
 	.left {
 		display: flex;
@@ -96,7 +120,6 @@
 		padding: 2%;
 		color: #000000;
 		text-align: center;
-		text-align: left;
 		font-size: small;
 		font-family: 'Montserrat', sans-serif;
 
@@ -114,6 +137,17 @@
 
 	#tooltip:hover #tooltiptext {
 		visibility: visible;
+	}
+
+	#tooltiptext a{
+		background-color: rgb(252, 247, 241);
+		text-decoration: none;
+		color: rgb(0, 0, 0);
+		padding: 2px 6px 2px 6px;
+		border-top: 1px solid #CCCCCC;
+		border-right: 1px solid rgb(117, 72, 20);
+		border-bottom: 1px solid rgb(117, 72, 20);
+		border-left: 1px solid #CCCCCC;
 	}
 
 	.title {

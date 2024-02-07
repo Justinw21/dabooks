@@ -44,17 +44,17 @@
 			})
 			.catch((err) => console.log(err));
 	}
-
-	
 </script>
 
 <div id="app">
 	<div class="left">
-		<div class = "header-container">
+		<div class="header-container">
 			<h1>Book Search</h1>
-			<h2> <a href = "/profile"> Profile </a> </h2>
-			<h2> <a href = "/recommendation"> Recommendations </a> </h2> 
-			<h2> <a href = "/about"> About Us </a> </h2>
+			<div class="header-links">
+				<p><a href="/profile"> Profile </a></p>
+				<p><a href="/recommendation"> Recommendations </a></p>
+				<p><a href="/about"> About Us </a></p>
+			</div>
 		</div>
 	</div>
 	<div class="right">
@@ -91,29 +91,39 @@
 								{book.volumeInfo.publisher}
 							{/if}
 							<br />
-							Genre: {book.volumeInfo.categories}
+							Genre: 
+							{#if book.volumeInfo.categories === undefined}
+								Not Available
+							{:else}
+								{book.volumeInfo.categories}
+							{/if}
 							<br />
-							Language: {book.volumeInfo.language}
+							Language:
+							{#if book.volumeInfo.language === undefined}
+								Not Available
+							{:else}
+								{book.volumeInfo.language}
+							{/if}
 							<br />
-
 							Price:
 							{#if book.saleInfo.retailPrice?.amount === undefined}
 								Not Available
 							{:else}
 								{book.saleInfo.retailPrice?.amount} USD
 							{/if}
+							<p><a href={book.volumeInfo.previewLink}> Preview Here</a>
 						</p>
 					</div>
 					{#if book.volumeInfo.imageLinks != undefined}
-					<img src={book.volumeInfo.imageLinks.thumbnail} alt="" />
+						<img src={book.volumeInfo.imageLinks.thumbnail} alt="" />
 					{:else}
-					<img src = '/Logo.png' alt="">
+						<img src="/Logo.png" alt="" />
 					{/if}
 					<h3 class="title">{book.volumeInfo.title}</h3>
 					{#if book.volumeInfo.authors != undefined}
 						<p class="author">{book.volumeInfo.authors.join(', ')}</p>
 					{:else}
-						<p class = "author">Unknown</p>
+						<p class="author">Unknown</p>
 					{/if}
 
 					{#if book.volumeInfo.description != undefined}
@@ -122,8 +132,8 @@
 						{:else}
 							<p class="desc">{book.volumeInfo.description}</p>
 						{/if}
-						{:else}
-							<p class="desc"> No description avaliable</p>
+					{:else}
+						<p class="desc">No description avaliable</p>
 					{/if}
 				</div>
 			{/each}
