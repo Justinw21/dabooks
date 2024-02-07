@@ -11,9 +11,19 @@
     	align-items: center;	
 	}
 
-	h1, h2, h3 {
+	h1 {
 		font-family: 'Indie Flower', cursive;
 		font-size: xxx-large;
+		color: rgb(117, 72, 20);
+		background-color: rgb(219, 204, 186);
+		border-radius: 20px;
+		margin: 10px;
+		border-style: dashed;
+		border-width: 5px;
+	}
+	h2{
+		font-family: 'Indie Flower', cursive;
+		font-size: xx-large;
 		color: rgb(117, 72, 20);
 		background-color: rgb(219, 204, 186);
 		border-radius: 20px;
